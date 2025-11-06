@@ -1,0 +1,1069 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7202]
+    workingdir = working
+    udp = 10201
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW10]]
+        1 = access 1 R8 f1/0
+        2 = access 1 R18 f1/0
+        3 = access 1 R19 f1/0
+        x = -500.761976671
+        y = 276.256926037
+        z = 1.0
+    [[ROUTER R7]]
+        console = 2107
+        aux = 2507
+        cnfg = R7.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW2 3
+        x = -653.296464556
+        y = 126.671139599
+        z = 1.0
+    [[ROUTER R8]]
+        console = 2108
+        aux = 2508
+        cnfg = R8.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW10 1
+        f1/1 = SW3 2
+        x = -437.296464556
+        y = 138.671139599
+        z = 1.0
+    [[ROUTER R9]]
+        console = 2109
+        aux = 2509
+        cnfg = R9.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW3 3
+        x = -294.870057685
+        y = 134.428498912
+        z = 1.0
+[127.0.0.1:7203]
+    workingdir = working
+    udp = 10301
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW11]]
+        1 = access 1 R10 f1/0
+        2 = access 1 R20 f1/0
+        3 = access 1 R21 f1/0
+        x = -160.950793489
+        y = 288.913780286
+        z = 1.0
+        hx = 16.5
+        hy = -28.0
+    [[ETHSW SW12]]
+        1 = access 1 R12 f1/0
+        2 = access 1 R22 f1/0
+        3 = access 1 R23 f1/0
+        x = 139.049206511
+        y = 288.913780286
+        z = 1.0
+        hx = 7.91421356237
+        hy = -25.0
+    [[ROUTER R12]]
+        console = 2112
+        aux = 2512
+        cnfg = R12.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW12 1
+        f1/1 = SW5 2
+        x = 152.117749006
+        y = 141.671139599
+        z = 1.0
+    [[ROUTER R10]]
+        console = 2110
+        aux = 2510
+        cnfg = R10.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW11 1
+        f1/1 = SW4 2
+        x = -164.296464556
+        y = 141.671139599
+        z = 1.0
+    [[ROUTER R11]]
+        console = 2111
+        aux = 2511
+        cnfg = R11.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW4 3
+        x = 8.34314575051
+        y = 133.771644663
+        z = 1.0
+        hx = 24.7279220614
+        hy = -26.4142135624
+[127.0.0.1:7200]
+    workingdir = working
+    udp = 10001
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R1]]
+        console = 2101
+        aux = 2501
+        cnfg = R1.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 1
+        f1/1 = SW2 1
+        x = -707.296464556
+        y = -164.328860401
+        z = 1.0
+    [[ROUTER R2]]
+        console = 2102
+        aux = 2502
+        cnfg = R2.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 2
+        f1/1 = SW3 1
+        x = -374.296464556
+        y = -168.328860401
+        z = 1.0
+    [[ROUTER R3]]
+        console = 2103
+        aux = 2503
+        cnfg = R3.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 3
+        f1/1 = SW4 1
+        x = -103.296464556
+        y = -165.328860401
+        z = 1.0
+    [[ETHSW SW1]]
+        1 = access 1 R1 f1/0
+        2 = access 1 R2 f1/0
+        3 = access 1 R3 f1/0
+        4 = access 1 R4 f1/0
+        5 = access 1 R5 f1/0
+        6 = access 1 EDGE-Router f1/0
+        x = -114.796464556
+        y = -306.328860401
+        z = 1.0
+    [[ETHSW SW3]]
+        1 = access 1 R2 f1/1
+        2 = access 1 R8 f1/1
+        3 = access 1 R9 f1/0
+        x = -386.867532368
+        y = 3.67113959937
+        z = 1.0
+    [[ETHSW SW2]]
+        1 = access 1 R1 f1/1
+        2 = access 1 R6 f1/0
+        3 = access 1 R7 f1/0
+        x = -707.382250994
+        y = 1.08535316174
+        z = 1.0
+    [[ETHSW SW4]]
+        1 = access 1 R3 f1/1
+        2 = access 1 R10 f1/1
+        3 = access 1 R11 f1/0
+        x = -107.796464556
+        y = 5.67113959937
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = working
+    udp = 10101
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R4]]
+        console = 2104
+        aux = 2504
+        cnfg = R4.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 4
+        f1/1 = SW5 1
+        x = 199.703535444
+        y = -171.328860401
+        z = 1.0
+    [[ROUTER R5]]
+        console = 2105
+        aux = 2505
+        cnfg = R5.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 5
+        f1/1 = SW6 1
+        x = 464.703535444
+        y = -163.328860401
+        z = 1.0
+    [[ROUTER R6]]
+        console = 2106
+        aux = 2506
+        cnfg = R6.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW2 2
+        f1/1 = SW7 1
+        slot2 = PA-2FE-TX
+        f2/0 = SW9 1
+        x = -753.296464556
+        y = 126.671139599
+        z = 1.0
+    [[ETHSW SW9]]
+        1 = access 1 R6 f2/0
+        2 = access 1 R16 f1/0
+        3 = access 1 R17 f1/0
+        x = -859.945742855
+        y = 287.913780286
+        z = 1.0
+    [[ETHSW SW7]]
+        1 = access 1 R6 f1/1
+        2 = access 1 R26 f1/0
+        3 = access 1 R27 f1/0
+        x = -885.796464556
+        y = 131.671139599
+        z = 1.0
+    [[ETHSW SW5]]
+        1 = access 1 R4 f1/1
+        2 = access 1 R12 f1/1
+        3 = access 1 R13 f1/0
+        x = 204.203535444
+        y = 4.67113959937
+        z = 1.0
+    [[ETHSW SW6]]
+        1 = access 1 R5 f1/1
+        2 = access 1 R14 f1/1
+        3 = access 1 R15 f1/0
+        x = 471.203535444
+        y = 4.67113959937
+        z = 1.0
+[127.0.0.1:7206]
+    workingdir = working
+    udp = 10601
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R19]]
+        console = 2119
+        aux = 2519
+        cnfg = R19.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW10 3
+        x = -403.965512115
+        y = 431.913780286
+        z = 1.0
+    [[ROUTER R20]]
+        console = 2120
+        aux = 2520
+        cnfg = R20.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW11 2
+        x = -234.220346111
+        y = 469.168614282
+        z = 1.0
+    [[ROUTER R21]]
+        console = 2121
+        aux = 2521
+        cnfg = R21.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW11 3
+        x = -25.4264068712
+        y = 464.925973595
+        z = 1.0
+[127.0.0.1:7207]
+    workingdir = working
+    udp = 10701
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R23]]
+        console = 2123
+        aux = 2523
+        cnfg = R23.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW12 3
+        x = 276.159379566
+        y = 473.683332908
+        z = 1.0
+    [[ROUTER R24]]
+        console = 2124
+        aux = 2524
+        cnfg = R24.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW13 2
+        x = 417.005050634
+        y = 474.310749906
+        z = 1.0
+    [[ROUTER R22]]
+        console = 2122
+        aux = 2522
+        cnfg = R22.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW12 2
+        x = 112.51976926
+        y = 484.997041407
+        z = 1.0
+        hx = -4.97056274848
+        hy = -25.0
+[127.0.0.1:7204]
+    workingdir = working
+    udp = 10401
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW13]]
+        1 = access 1 R14 f1/0
+        2 = access 1 R24 f1/0
+        3 = access 1 R25 f1/0
+        x = 485.860389693
+        y = 291.742207411
+        z = 1.0
+    [[ROUTER R14]]
+        console = 2114
+        aux = 2514
+        cnfg = R14.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW13 1
+        f1/1 = SW6 2
+        x = 426.703535444
+        y = 139.671139599
+        z = 1.0
+    [[ROUTER R15]]
+        console = 2115
+        aux = 2515
+        cnfg = R15.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW6 3
+        f1/1 = R28 f1/0
+        x = 579.029437252
+        y = 139.671139599
+        z = 1.0
+    [[ROUTER R13]]
+        console = 2113
+        aux = 2513
+        cnfg = R13.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW5 3
+        x = 293.129942315
+        y = 134.600071787
+        z = 1.0
+[127.0.0.1:7205]
+    workingdir = working
+    udp = 10501
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R16]]
+        console = 2116
+        aux = 2516
+        cnfg = R16.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW9 2
+        x = -1034.65389566
+        y = 453.783837972
+        z = 1.0
+    [[ROUTER R17]]
+        console = 2117
+        aux = 2517
+        cnfg = R17.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW9 3
+        x = -827.173664916
+        y = 462.269119346
+        z = 1.0
+    [[ROUTER R18]]
+        console = 2118
+        aux = 2518
+        cnfg = R18.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW10 2
+        x = -601.546247918
+        y = 414.943217538
+        z = 1.0
+[127.0.0.1:7208]
+    workingdir = working
+    udp = 10801
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R27]]
+        console = 2127
+        aux = 2527
+        cnfg = R27.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW7 3
+        x = -1119.59711319
+        y = 211.892352262
+        z = 1.0
+    [[ROUTER R25]]
+        console = 2125
+        aux = 2525
+        cnfg = R25.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW13 3
+        x = 620.242640687
+        y = 471.482322781
+        z = 1.0
+    [[ROUTER R26]]
+        console = 2126
+        aux = 2526
+        cnfg = R26.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW7 2
+        x = -1099.38896039
+        y = 23.8019484661
+        z = 1.0
+[127.0.0.1:7209]
+    workingdir = working
+    udp = 10901
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R30]]
+        console = 2130
+        aux = 2530
+        cnfg = R30.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW8 3
+        x = 1129.4764056
+        y = 217.002092041
+        z = 1.0
+    [[ETHSW SW8]]
+        1 = access 1 R28 f1/1
+        2 = access 1 R29 f1/0
+        3 = access 1 R30 f1/0
+        x = 1000.05844123
+        y = 137.05591591
+        z = 1.0
+    [[ROUTER R29]]
+        console = 2129
+        aux = 2529
+        cnfg = R29.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW8 2
+        x = 1122.41248046
+        y = 52.9604614807
+        z = 1.0
+    [[ROUTER R28]]
+        console = 2128
+        aux = 2528
+        cnfg = R28.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R15 f1/1
+        f1/1 = SW8 1
+        x = 855.133259845
+        y = 136.391918986
+        z = 1.0
+[127.0.0.1:7210]
+    workingdir = working
+    udp = 11001
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 144
+        sparsemem = True
+        ghostios = True
+    [[ROUTER ISP]]
+        console = 2132
+        aux = 2532
+        cnfg = ISP.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = EDGE-Router f1/1
+        x = -106.539105243
+        y = -603.241774135
+        z = 1.0
+    [[ROUTER EDGE-Router]]
+        console = 2131
+        aux = 2531
+        cnfg = EDGE-Router.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 6
+        f1/1 = ISP f1/0
+        x = -107.953318806
+        y = -444.856997824
+        z = 1.0
+        hx = -114.181240867
+        hy = 4.69848480984
+[GNS3-DATA]
+    configs = .
+    workdir = working
+    m11 = 0.707106781187
+    m22 = 0.707106781187
+    [[NOTE 1]]
+        text = "SUM: 172.16.0.0/29"
+        x = -49.4974746831
+        y = 240.675756957
+        color = "#55aaff"
+    [[NOTE 2]]
+        text = "SUM: 172.16.0.0/30"
+        x = -343.653895657
+        y = 223.906204336
+        color = "#55aaff"
+    [[NOTE 3]]
+        text = "SUM: 172.16.0.0/30"
+        x = -677.408296377
+        y = 224.107214462
+        color = "#55aaff"
+    [[NOTE 4]]
+        text = "SUM: 10.0.0.16/29"
+        x = -1247.33636201
+        y = 266.533621334
+        color = "#55aaff"
+    [[NOTE 5]]
+        text = "SUM: 10.0.0.16/30"
+        x = -1245.92214845
+        y = 68.7447327282
+        color = "#55aaff"
+    [[NOTE 6]]
+        text = "SUM: 172.16.0.8/29"
+        x = 1046.51803616
+        y = 3.4827560573
+        color = "#55aaff"
+    [[NOTE 7]]
+        text = "SUM: 172.16.0.0/27"
+        x = 1050.76067684
+        y = 334.609739779
+        color = "#55aaff"
+    [[NOTE 8]]
+        text = "SUM: 192.168.0.0/30"
+        x = -1107.32921934
+        y = 554.020994749
+        color = "#55aaff"
+    [[NOTE 9]]
+        text = "SUM: 192.168.0.0/29"
+        x = -893.78297142
+        y = 552.807791313
+        color = "#55aaff"
+    [[NOTE 10]]
+        text = "SUM: 192.168.0.4/30"
+        x = -695.793072688
+        y = 502.097113195
+        color = "#55aaff"
+    [[NOTE 11]]
+        text = "SUM: 192.168.0.10/31"
+        x = -476.58997052
+        y = 536.239248818
+        color = "#55aaff"
+    [[NOTE 12]]
+        text = "SUM: 192.168.0.10/31"
+        x = -260.215295477
+        y = 556.239248818
+        color = "#55aaff"
+    [[NOTE 13]]
+        text = "SUM: 192.168.0.12/30"
+        x = -49.4974746831
+        y = 577.653462381
+        color = "#55aaff"
+    [[NOTE 14]]
+        text = "SUM: 192.168.0.0/27"
+        x = 220.61731573
+        y = 584.925540319
+        color = "#55aaff"
+    [[NOTE 15]]
+        text = "Network: 200.0.0.0/30"
+        x = -65.0538238692
+        y = -525.232106143
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 16]]
+        text = "SUM: 192.168.0.16/29"
+        x = 588.312841947
+        y = 585.126550446
+        color = "#55aaff"
+    [[NOTE 17]]
+        text = "no au??"
+        x = 848.528137424
+        y = 81.6665222414
+    [[NOTE 18]]
+        text = "Network: 192.168.1.40/30"
+        x = 569.928065636
+        y = 183.497041407
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 19]]
+        text = "route injection"
+        x = -38.1837661841
+        y = -435.935641587
+    [[NOTE 20]]
+        text = "Network: 192.168.1.32/29"
+        x = 513.359523141
+        y = 267.136651714
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 21]]
+        text = "Network: 192.168.1.24/29"
+        x = 176.776695297
+        y = 265.923448278
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 22]]
+        text = "Network: 192.168.1.16/29"
+        x = -239.002092041
+        y = 342.491990773
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 23]]
+        text = "Network: 192.168.1.8/29"
+        x = -572.756492761
+        y = 301.680807591
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 24]]
+        text = "Network: 192.168.1.0/29"
+        x = -854.184991673
+        y = 316.023953342
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 25]]
+        text = "Network: 172.16.6.0/24"
+        x = -978.635785162
+        y = 67.7325394194
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 26]]
+        text = "Network: 172.16.10.0/24"
+        x = 832.971788238
+        y = -34.0908370715
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 27]]
+        text = "Network: 172.16.5.0/24"
+        x = 506.28845533
+        y = -40.9608947566
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 28]]
+        text = "Network: 172.16.4.0/24"
+        x = 258.801081914
+        y = -26.6177490061
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 29]]
+        text = "Network: 172.16.3.0/24"
+        x = -49.4974746831
+        y = -37.7304473783
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 30]]
+        text = "Network: 172.16.2.0/24"
+        x = -328.097546471
+        y = -37.5294372515
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 31]]
+        text = "Network: 172.16.1.0/24"
+        x = -633.567675943
+        y = -24.6005050634
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 32]]
+        text = "Network: 10.10.10.0/24"
+        x = -29.6984848098
+        y = -338.354905783
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 33]]
+        text = "192.168.0.18/32\n192.168.0.19/32\n192.168.0.20/32"
+        x = 588.312841947
+        y = 521.910388418
+        color = "#ff5500"
+    [[NOTE 34]]
+        text = "192.168.0.15/32\n192.168.0.16/32\n192.168.0.17/32"
+        x = 230.516810667
+        y = 516.454544295
+        color = "#ff5500"
+    [[NOTE 35]]
+        text = "192.168.0.12/32\n192.168.0.13/32\n192.168.0.14/32"
+        x = -52.3259018078
+        y = 509.58448661
+        color = "#ff5500"
+    [[NOTE 36]]
+        text = "192.168.0.10/32\n192.168.0.11/32"
+        x = -253.144227665
+        y = 515.241340859
+        color = "#ff5500"
+    [[NOTE 37]]
+        text = "192.168.0.7/32\n192.168.0.8/32\n192.168.0.9/32"
+        x = -445.477272148
+        y = 473.015944115
+        color = "#ff5500"
+    [[NOTE 38]]
+        text = "192.168.0.5/32\n192.168.0.6/32"
+        x = -644.881384442
+        y = 460.48903218
+        color = "#ff5500"
+    [[NOTE 39]]
+        text = "192.168.0.3/32\n192.168.0.4/32"
+        x = -883.883476483
+        y = 508.773303428
+        color = "#ff5500"
+    [[NOTE 40]]
+        text = "192.168.0.1/32\n192.168.0.2/32"
+        x = -1081.87337522
+        y = 507.560099992
+        color = "#ff5500"
+    [[NOTE 41]]
+        text = "172.16.0.14/32\n172.16.0.15/32\n172.16.0.16/32"
+        x = 1091.77287015
+        y = 268.759018078
+        color = "#ff5500"
+    [[NOTE 42]]
+        text = "172.16.0.11/32\n172.16.0.12/32\n172.16.0.13/32"
+        x = 1086.1160159
+        y = -61.9659453905
+        color = "#ff5500"
+    [[NOTE 43]]
+        text = "172.16.0.8/32\n172.16.0.9/32\n172.16.0.10/32"
+        x = 265.872149726
+        y = 182.894011027
+        color = "#ff5500"
+    [[NOTE 44]]
+        text = "172.16.0.5/32\n172.16.0.6/32\n172.16.0.7/32"
+        x = -22.627416998
+        y = 181.680807591
+        color = "#ff5500"
+    [[NOTE 45]]
+        text = "172.16.0.3/32\n172.16.0.4/32"
+        x = -316.783837972
+        y = 184.710244843
+        color = "#ff5500"
+    [[NOTE 46]]
+        text = "172.16.0.1/32\n172.16.0.2/32"
+        x = -650.538238692
+        y = 179.25440072
+        color = "#ff5500"
+    [[NOTE 47]]
+        text = "10.0.0.19/32\n10.0.0.20/32\n10.0.0.21/32"
+        x = -1248.75057558
+        y = 199.25440072
+        color = "#ff5500"
+    [[NOTE 48]]
+        text = "10.0.0.16/32\n10.0.0.17/32\n10.0.0.18/32"
+        x = -1243.09372133
+        y = 1.46551211459
+        color = "#ff5500"
+    [[NOTE 49]]
+        text = "10.0.0.13/32\n10.0.0.14/32\n10.0.0.15/32"
+        x = 535.986940139
+        y = -175.110173055
+        color = "#ff5500"
+    [[NOTE 50]]
+        text = "10.0.0.10/32\n10.0.0.11/32\n10.0.0.12/32"
+        x = 73.5391052434
+        y = -170.666522241
+        color = "#ff5500"
+    [[NOTE 51]]
+        text = "10.0.0.7/32\n10.0.0.8/32\n10.0.0.9/32"
+        x = -217.788888605
+        y = -173.293939239
+        color = "#ff5500"
+    [[NOTE 52]]
+        text = "10.0.0.4/32\n10.0.0.5/32\n10.0.0.6/32"
+        x = -496.388960393
+        y = -178.749783362
+        color = "#ff5500"
+    [[NOTE 53]]
+        text = "10.0.0.1/32\n10.0.0.2/32\n10.0.0.3/32"
+        x = -840.04285605
+        y = -178.548773235
+        color = "#ff5500"
+    [[NOTE 54]]
+        text = "RIP v1"
+        x = 1002.67741572
+        y = -71.0685424949
+    [[NOTE 55]]
+        text = "Pass = FFXR-1980"
+        x = 535.986940139
+        y = -16.7182540695
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#55ff00"
+    [[NOTE 56]]
+        text = "Pass = FFSA-1986"
+        x = 271.529003976
+        y = -5.20353544372
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#55ff00"
+    [[NOTE 57]]
+        text = "Pass = FFQ9-090"
+        x = -36.7695526217
+        y = -5.00252531694
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#55ff00"
+    [[NOTE 58]]
+        text = "Pass = FFSA-1"
+        x = -325.269119346
+        y = -14.7010101268
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#55ff00"
+    [[NOTE 59]]
+        text = "Pass = GX89-0"
+        x = -633.567675943
+        y = -1.77207793864
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#55ff00"
+    [[NOTE 60]]
+        text = "Pass = FFTX-1089"
+        x = -31.1126983722
+        y = -317.141702348
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#55ff00"
+    [[NOTE 61]]
+        text = "Admin"
+        x = 424.264068712
+        y = 519.87171645
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 62]]
+        text = "Admin"
+        x = 113.13708499
+        y = 529.972221514
+        font = "MS Shell Dlg 2,11,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 63]]
+        text = "f1/0"
+        x = 39.4900506128
+        y = 43.6065450454
+        interface = ISP f1/0
+    [[NOTE 64]]
+        text = "f1/1"
+        x = 32.1668036366
+        y = -32.13345698
+        interface = EDGE-Router f1/1
+    [[NOTE 65]]
+        text = "f1/0"
+        x = 39.4819170059
+        y = 47.8535254075
+        interface = EDGE-Router f1/0
+    [[NOTE 66]]
+        text = "f1/0"
+        x = -53.6349197626
+        y = 4.26410639735
+        interface = R30 f1/0
+    [[NOTE 67]]
+        text = "f1/0"
+        x = -0.320207325339
+        y = 44.1306073978
+        interface = R29 f1/0
+    [[NOTE 68]]
+        text = "f1/1"
+        x = 72.8202218068
+        y = 18.2118691606
+        interface = R28 f1/1
+    [[NOTE 69]]
+        text = "f1/0"
+        x = -39.5031490983
+        y = 33.2780674699
+        interface = R28 f1/0
+    [[NOTE 70]]
+        text = "f1/0"
+        x = 69.9989482407
+        y = 6.79875567315
+        interface = R27 f1/0
+    [[NOTE 71]]
+        text = "f1/0"
+        x = 68.554330419
+        y = 40.3272908106
+        interface = R26 f1/0
+    [[NOTE 72]]
+        text = "f1/0"
+        x = -33.0911986004
+        y = -21.1397081014
+        interface = R25 f1/0
+    [[NOTE 73]]
+        text = "f1/0"
+        x = 55.5090623881
+        y = -17.8155683731
+        interface = R24 f1/0
+    [[NOTE 74]]
+        text = "f1/0"
+        x = -32.896485452
+        y = -20.140719804
+        interface = R23 f1/0
+    [[NOTE 75]]
+        text = "f1/0"
+        x = 51.6266081245
+        y = -20.9811289345
+        interface = R22 f1/0
+    [[NOTE 76]]
+        text = "f1/0"
+        x = 14.9607722027
+        y = -13.7013481605
+        interface = R21 f1/0
+    [[NOTE 77]]
+        text = "f1/0"
+        x = 49.4869707144
+        y = -22.122545405
+        interface = R20 f1/0
+    [[NOTE 78]]
+        text = "f1/0"
+        x = -34.7417462207
+        y = -27.6379713845
+        interface = R19 f1/0
+    [[NOTE 79]]
+        text = "f1/0"
+        x = 53.0438608809
+        y = -12.6156560098
+        interface = R18 f1/0
+    [[NOTE 80]]
+        text = "f1/0"
+        x = -41.5307984395
+        y = -29.9728604594
+        interface = R17 f1/0
+    [[NOTE 81]]
+        text = "f1/0"
+        x = 60.9178869922
+        y = -17.3120776037
+        interface = R16 f1/0
+    [[NOTE 82]]
+        text = "f1/1"
+        x = 72.9762371637
+        y = 20.6214274667
+        interface = R15 f1/1
+    [[NOTE 83]]
+        text = "f1/0"
+        x = 38.7249553182
+        y = -43.7265141202
+        interface = R15 f1/0
+    [[NOTE 84]]
+        text = "f1/1"
+        x = -6.67679116713
+        y = -44.2316031695
+        interface = R14 f1/1
+    [[NOTE 85]]
+        text = "f1/0"
+        x = 33.2361465346
+        y = 61.9993029291
+        interface = R14 f1/0
+    [[NOTE 86]]
+        text = "f1/0"
+        x = 19.1373985292
+        y = -47.1263490583
+        interface = R13 f1/0
+    [[NOTE 87]]
+        text = "f1/1"
+        x = 6.25262746061
+        y = -46.4826714578
+        interface = R12 f1/1
+    [[NOTE 88]]
+        text = "f1/0"
+        x = 27.186899046
+        y = 61.8884910987
+        interface = R12 f1/0
+    [[NOTE 89]]
+        text = "f1/0"
+        x = 24.1221731283
+        y = -46.8996449416
+        interface = R11 f1/0
+    [[NOTE 90]]
+        text = "f1/1"
+        x = 54.0045204049
+        y = -27.6663728083
+        interface = R10 f1/1
+    [[NOTE 91]]
+        text = "f1/0"
+        x = 41.7251492927
+        y = 57.7231448607
+        interface = R10 f1/0
+    [[NOTE 92]]
+        text = "f1/0"
+        x = 17.8406251419
+        y = -49.0083998871
+        interface = R9 f1/0
+    [[NOTE 93]]
+        text = "f1/1"
+        x = 48.6622065639
+        y = -14.8061854251
+        interface = R8 f1/1
+    [[NOTE 94]]
+        text = "f1/0"
+        x = 32.9550201499
+        y = 61.9999747102
+        interface = R8 f1/0
+    [[NOTE 95]]
+        text = "f1/0"
+        x = 21.0209825224
+        y = -47.6852163139
+        interface = R7 f1/0
+    [[NOTE 96]]
+        text = "f2/0"
+        x = 6.21681686748
+        y = 54.9069032616
+        interface = R6 f2/0
+    [[NOTE 97]]
+        text = "f1/1"
+        x = -55.0820777412
+        y = 24.52074392
+        interface = R6 f1/1
+    [[NOTE 98]]
+        text = "f1/0"
+        x = 2.48701596789
+        y = -51.0697144081
+        interface = R6 f1/0
+    [[NOTE 99]]
+        text = "f1/1"
+        x = 35.2188007849
+        y = 61.9384141282
+        interface = R5 f1/1
+    [[NOTE 100]]
+        text = "f1/0"
+        x = -63.7122768846
+        y = 4.92772143723
+        interface = R5 f1/0
+    [[NOTE 101]]
+        text = "f1/1"
+        x = 34.645664301
+        y = 61.9661330255
+        interface = R4 f1/1
+    [[NOTE 102]]
+        text = "f1/0"
+        x = -45.8769886721
+        y = -26.9997710177
+        interface = R4 f1/0
+    [[NOTE 103]]
+        text = "f1/1"
+        x = 32.5151871291
+        y = 61.9970618481
+        interface = R3 f1/1
+    [[NOTE 104]]
+        text = "f1/0"
+        x = 34.7982381559
+        y = -41.966871903
+        interface = R3 f1/0
+    [[NOTE 105]]
+        text = "f1/1"
+        x = 32.2772264558
+        y = 61.9934694469
+        interface = R2 f1/1
+    [[NOTE 106]]
+        text = "f1/0"
+        x = 77.9537794704
+        y = -1.50911768279
+        interface = R2 f1/0
+    [[NOTE 107]]
+        text = "f1/1"
+        x = 33.2531594865
+        y = 61.9991988704
+        interface = R1 f1/1
+    [[NOTE 108]]
+        text = "f1/0"
+        x = 71.8171854401
+        y = 12.3446328653
+        interface = R1 f1/0
+    [[SHAPE 1]]
+        type = rectangle
+        x = 793.373808491
+        y = -70.7106781187
+        width = 454.558441227
+        height = 441.23463146
+        border_color = "#5500ff"
