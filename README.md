@@ -1,4 +1,4 @@
-# 🛰️ CCNP Advanced Routing Lab — RIP v1 & v2 Redistribution, Route Summarization, and Authentication
+# 🛰️ CCNP Advanced Routing Lab — RIP v1 & v2 Compatibility, Route Summarization, and Authentication
 
 ## 📘 Overview
 This lab demonstrates advanced dynamic routing concepts using **RIP version 1 and RIP version 2**, focusing on interoperability, route summarization, authentication, and route injection.  
@@ -10,7 +10,7 @@ The network was built and tested using **GNS3**, simulating a multi-router enter
 The main objectives of this lab were to:
 
 - Implement **RIP version 1 and RIP version 2** across multiple routers.  
-- Configure **route redistribution** between RIP v1 and RIP v2 domains to ensure interoperability.  
+- Configure **compatibility** between RIP v1 and RIP v2 domains to ensure interoperability.  
 - Apply **route summarization** on loopback interfaces to minimize routing table entries and improve efficiency.  
 - Use **authentication (MD5)** between RIP neighbors to enhance routing security.  
 - Utilize **passive interfaces** to restrict routing updates from non-routing interfaces while maintaining reachability.  
@@ -36,7 +36,7 @@ The topology consists of:
 
 ## 🧠 Key Concepts Demonstrated
 
-- **RIP v1 and RIP v2 interoperability and redistribution**  
+- **RIP v1 and RIP v2 interoperability**  
 - **Route summarization** on loopback interfaces  
 - **Routing authentication (MD5)** between neighbors  
 - **Passive interface default** and selective activation  
